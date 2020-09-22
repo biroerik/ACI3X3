@@ -1,0 +1,87 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+<!DOCTYPE orarend [
+        <!ELEMENT orarend (ora)+>
+        <!ATTLIST orarend
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT ora (targy,idopont,helyszin,oktato,szak)>
+        <!ATTLIST ora
+                xmlns CDATA #FIXED ''
+                id CDATA #REQUIRED
+                tipus NMTOKEN #REQUIRED>
+
+        <!ELEMENT targy (#PCDATA)>
+        <!ATTLIST targy
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT idopont (nap,tol,ig)>
+        <!ATTLIST idopont
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT helyszin (#PCDATA)>
+        <!ATTLIST helyszin
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT oktato (#PCDATA)>
+        <!ATTLIST oktato
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT szak (#PCDATA)>
+        <!ATTLIST szak
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT nap (#PCDATA)>
+        <!ATTLIST nap
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT tol (#PCDATA)>
+        <!ATTLIST tol
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT ig (#PCDATA)>
+        <!ATTLIST ig
+                xmlns CDATA #FIXED ''>
+        ]>
+
+
+<orarend>
+    <ora id="1" tipus="elő">
+        <targy>
+            szoftwaretesztelés
+        </targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>
+            infó 103
+        </helyszin>
+        <oktato>
+            Tompa Tamás
+        </oktato>
+        <szak>
+            Mérnökinfó
+        </szak>
+    </ora>
+
+    <ora id="2" tipus="gyak">
+        <targy>
+            AWX
+        </targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>
+            infó 101
+        </helyszin>
+        <oktato>
+            Sós Robi
+        </oktato>
+        <szak>
+            Mérnökinfó
+        </szak>
+    </ora>
+</orarend>

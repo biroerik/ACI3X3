@@ -1,0 +1,22 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+
+<iskola>
+    <tanar kod="1">
+        <nev>
+            Bednarik László
+        </nev>
+        <szak>
+            Mérnökinfó
+        </szak>
+        <targy kod="1" oktato="Bednarik László">
+            <tnev>
+                XML
+            </tnev>
+            <osztaly>
+                valami
+            </osztaly>
+        </targy>
+
+    </tanar>
+
+</iskola>

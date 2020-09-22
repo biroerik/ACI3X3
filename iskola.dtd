@@ -1,0 +1,55 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+<!DOCTYPE iskola [
+        <!ELEMENT iskola (tanar)>
+        <!ATTLIST iskola
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT tanar (nev,szak,targy)>
+        <!ATTLIST tanar
+                xmlns CDATA #FIXED ''
+                kod CDATA #REQUIRED>
+
+        <!ELEMENT nev (#PCDATA)>
+        <!ATTLIST nev
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT szak (#PCDATA)>
+        <!ATTLIST szak
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT targy (tnev,osztaly)>
+        <!ATTLIST targy
+                xmlns CDATA #FIXED ''
+                kod CDATA #REQUIRED
+                oktato CDATA #REQUIRED>
+
+        <!ELEMENT tnev (#PCDATA)>
+        <!ATTLIST tnev
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT osztaly (#PCDATA)>
+        <!ATTLIST osztaly
+                xmlns CDATA #FIXED ''>
+        ]>
+
+
+<iskola>
+    <tanar kod="1">
+        <nev>
+            Bednarik László
+        </nev>
+        <szak>
+            Mérnökinfó
+        </szak>
+        <targy kod="1" oktato="Bednarik László">
+            <tnev>
+                XML
+            </tnev>
+            <osztaly>
+                valami
+            </osztaly>
+        </targy>
+
+    </tanar>
+
+</iskola>

@@ -1,0 +1,31 @@
+<?xml version="1.0"  ?>
+<!DOCTYPE dolgozo [
+        <!ELEMENT dolgozo (kod,nev,fizetes)>
+        <!ATTLIST dolgozo
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT kod EMPTY>
+        <!ATTLIST kod
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT nev EMPTY>
+        <!ATTLIST nev
+                xmlns CDATA #FIXED ''>
+
+        <!ELEMENT fizetes EMPTY>
+        <!ATTLIST fizetes
+                xmlns CDATA #FIXED ''>
+        ]>
+
+
+<dolgozo>
+    <kod>
+
+    </kod>
+    <nev>
+
+    </nev>
+    <fizetes>
+
+    </fizetes>
+</dolgozo>
