@@ -1,0 +1,43 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+
+<orarend>
+    <ora id="1" tipus="elő">
+        <targy>
+            szoftwaretesztelés
+        </targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>
+            infó 103
+        </helyszin>
+        <oktato>
+            Tompa Tamás
+        </oktato>
+        <szak>
+            Mérnökinfó
+        </szak>
+    </ora>
+
+    <ora id="2" tipus="gyak">
+        <targy>
+            AWX
+        </targy>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>
+            infó 101
+        </helyszin>
+        <oktato>
+            Sós Robi
+        </oktato>
+        <szak>
+            Mérnökinfó
+        </szak>
+    </ora>
+</orarend>
