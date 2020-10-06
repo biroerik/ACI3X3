@@ -1,0 +1,44 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+<nevjegykartya id="0">
+    <nev>
+        asda
+    </nev>
+    <ceg>
+        <cim>
+            <iranyitoszam>
+                3253
+            </iranyitoszam>
+            <varos>
+                istenemzeje
+            </varos>
+            <utca>
+                kossuth út
+            </utca>
+            <hazszam>
+                18
+            </hazszam>
+
+        </cim>
+        <nev>
+            asdasdasd
+        </nev>
+        <telefonszam korzet="36">
+            369977
+        </telefonszam>
+        <weblap>
+            asd.hu
+        </weblap>
+    </ceg>
+    <nev1>
+        sdadsa
+    </nev1>
+    <beosztas>
+        főnök
+    </beosztas>
+    <telefonszam korzet="36">
+        1234567
+    </telefonszam>
+    <email>
+        asd@asd.hu
+    </email>
+</nevjegykartya>
