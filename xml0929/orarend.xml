@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+    <ora id="1" tipus="eloadas">
+        <targy>mesint</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>12</tol>
+            <ig>15</ig>
+        </idopont>
+        <helyszin>30-as eloado</helyszin>
+        <oktato>dr. dudas laszlo</oktato>
+        <szak>progterv</szak>
+    </ora>
+    <ora id="2" tipus="eloadas">
+        <targy>webtech</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>15</tol>
+            <ig>17</ig>
+        </idopont>
+        <helyszin>info 103</helyszin>
+        <oktato>agardi anita</oktato>
+        <szak>progterv</szak>
+    </ora>
+    <ora id="3" tipus="gyakorlat">
+        <targy>webtech</targy>
+        <idopont>
+            <nap>hetfo</nap>
+            <tol>17</tol>
+            <ig>19</ig>
+        </idopont>
+        <helyszin>info 15</helyszin>
+        <oktato>satan adam</oktato>
+        <szak>progterv</szak>
+    </ora>
+    <ora id="4" tipus="eloadas">
+        <targy>xml</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>37-es eloado</helyszin>
+        <oktato>dr. bednarik laszlo</oktato>
+        <szak>progterv</szak>
+    </ora>
+    <ora id="5" tipus="gyakorlat">
+        <targy>xml</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>info 101</helyszin>
+        <oktato>dr. bednarik laszlo</oktato>
+        <szak>progterv</szak>
+    </ora>
+    <ora id="6" tipus="gyakorlat">
+        <targy>mesint</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>17</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>info 15</helyszin>
+        <oktato>dr. dudas laszlo</oktato>
+        <szak>progterv</szak>
+    </ora>
+</orarend>
