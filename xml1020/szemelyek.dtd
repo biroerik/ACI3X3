@@ -1,0 +1,43 @@
+<?xml version="1.0" encodeing="UTF-8" ?>
+
+<!DOCTYPE szemelyek [
+        <!ELEMENT szemelyek (szemely)*>
+        <!ELEMENT szemely (nev|kor|varos)*>
+        <!ATTLIST szemely
+                id CDATA #REQUIRED>
+        <!ELEMENT nev (#PCDATA)>
+        <!ELEMENT kor (#PCDATA)>
+        <!ELEMENT varos (#PCDATA)>
+        ]>
+<szemelyek>
+    <szemely id="1">
+        <nev>
+            dora
+        </nev>
+        <kor>
+            29
+        </kor>
+        <varos>
+            budapest
+        </varos>
+    </szemely>
+    <szemely id="2">
+        <nev>
+            kata
+        </nev>
+        <varos>
+            miskolc
+        </varos>
+    </szemely>
+    <szemely id="3">
+        <nev>
+            atilla
+        </nev>
+        <kor>
+            29
+        </kor>
+        <varos>
+            budapest
+        </varos>
+    </szemely>
+</szemelyek>
