@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><verseny sorszam="1">
+    <idopont>2004.09.22</idopont>
+    <helyszin>Sydney</helyszin>
+    <palyahossz>2342</palyahossz>
+    <jegyar>1516</jegyar>
+    <versenyzo azonosito="4">
+        <nev>John Lock</nev>
+        <nemzetiseg>Amerikai</nemzetiseg>
+        <pont>4</pont>
+        <szulido>1978.08.15</szulido>
+        <csapat>Ferrari</csapat>
+    </versenyzo>
+    <sponzor id="1">
+        <nev>MacCutcheon</nev>
+        <szehely>Los Angeles</szehely>
+        <orszag>Amerika</orszag>
+    </sponzor>
+    <nezettseg id="1">
+        <nezoszam>108</nezoszam>
+        <bevetel>4815162342</bevetel>
+        <nezoszam>1623</nezoszam>
+        <tvado>ABC</tvado>
+    </nezettseg>
+
+</verseny>

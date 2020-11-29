@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="verseny" type="versenyType"/>
+  <xs:complexType name="versenyzoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="nemzetiseg"/>
+      <xs:element type="xs:byte" name="pont"/>
+      <xs:element type="xs:string" name="szulido"/>
+      <xs:element type="xs:string" name="csapat"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="azonosito"/>
+  </xs:complexType>
+  <xs:complexType name="sponzorType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nev"/>
+      <xs:element type="xs:string" name="szehely"/>
+      <xs:element type="xs:string" name="orszag"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="nezettsegType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:byte" name="nezoszam"/>
+      <xs:element name="bevetel">
+        <xs:simpleType>
+          <xs:restriction base="xs:long">
+            <xs:enumeration value="4815162342"/>
+            <xs:enumeration value="1623"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="tvado"/>
+    </xs:choice>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="versenyType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="idopont"/>
+      <xs:element type="xs:string" name="helyszin"/>
+      <xs:element type="xs:short" name="palyahossz"/>
+      <xs:element type="xs:short" name="jegyar"/>
+      <xs:element type="versenyzoType" name="versenyzo"/>
+      <xs:element type="sponzorType" name="sponzor"/>
+      <xs:element type="nezettsegType" name="nezettseg"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="sorszam"/>
+  </xs:complexType>
+</xs:schema>
