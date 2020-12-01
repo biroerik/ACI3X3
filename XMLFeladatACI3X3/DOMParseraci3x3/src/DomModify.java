@@ -16,7 +16,7 @@ import java.io.IOException;
 public class DomModify {
     
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, TransformerException {
-        File inputFile = new File("D:\\XMLaci3x3.xml");
+        File inputFile = new File("D:\\XMLaci3x3.xml");//hely megadása
 
         Document doc = DocumentBuilderFactory
                 .newInstance()
@@ -24,18 +24,16 @@ public class DomModify {
                 .parse(inputFile);
 
         Element root = doc.getDocumentElement();
-        root.normalize();
+        root.normalize();//olvasható egyed létrehozása
 
-        Node beosztas = doc.getElementsByTagName("nemzetiseg").item(0);
-
-        beosztas.setTextContent("Amerikai");
-
+        Node beosztas = doc.getElementsByTagName("nemzetiseg").item(0);//módos tandó adattag kiválsztása
+        beosztas.setTextContent("modify");//adott adatttag módos tása
         Transformer transformer = TransformerFactory
                 .newInstance()
                 .newTransformer();
         DOMSource source = new DOMSource(doc);
         StreamResult result = new StreamResult(inputFile);
-        transformer.transform(source, result);
+        transformer.transform(source, result);//mododitások mentése
 
         System.out.println("kesz");
     }

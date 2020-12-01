@@ -12,7 +12,7 @@ import java.io.IOException;
 public class DomRead {
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
-        File inputFile = new File("D:\\XMLaci3x3.xml");
+        File inputFile = new File("D:\\XMLaci3x3.xml");//file helyének megadása
 
         Document doc = DocumentBuilderFactory
                 .newInstance()
@@ -20,20 +20,20 @@ public class DomRead {
                 .parse(inputFile);
 
         Element root = doc.getDocumentElement();
-        root.normalize();
+        root.normalize();//olvasható egyed létrehozása
 
-        printDocument(root, "");
+        printDocument(root, "");//alábbi metódus meghivasa
     }
 
     public static void printDocument(Node root, String separator) {
-        String nodename = root.getNodeName();
+        String nodename = root.getNodeName();//egyedek listázása
         if (!nodename.contains("text")) {
             System.out.println(separator + nodename);
         }
         separator += "  ";
 
         NodeList children = root.getChildNodes();
-
+//egyedek gyerekelemeinek feldolgozása
         for (int i = 0; i < children.getLength(); i++) {
             Node child = children.item(i);
             boolean isComplex = child.getTextContent().contains("\n");
@@ -41,7 +41,7 @@ public class DomRead {
             if (isComplex) {
                 printDocument(child, separator);
             } else {
-                System.out.print(separator + child.getNodeName());
+                System.out.print(separator + child.getNodeName());//kiirás
                 System.out.println(": " + child.getTextContent());
             }
         }
